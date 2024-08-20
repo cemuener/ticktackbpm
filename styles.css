@@ -1,4 +1,6 @@
 /* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=DSEG7-Classic:wght@700&display=swap');
+
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -6,8 +8,8 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #282c34;
-    color: white;
+    background-color: black;
+    color: #FFDD44; /* Similar to the color in your image */
 }
 
 .container {
@@ -15,6 +17,7 @@ body {
 }
 
 .countdown-display {
+    font-family: 'DSEG7 Classic', sans-serif;
     font-size: 4em;
-    margin-bottom: 20px;
+    color: #FFDD44; /* Matches the font color in the image */
 }
