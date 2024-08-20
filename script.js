@@ -9,15 +9,15 @@ const countdownInterval = setInterval(function() {
     const timeRemaining = targetDate - now;
 
     if (timeRemaining >= 0) {
-        // Time calculations for days, hours, minutes and seconds
+        // Time calculations for hours, minutes, and seconds
         const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
         const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
-        // Display the result in the element with id="countdown"
+        // Display the result in the format HH:MM:SS
         document.getElementById('countdown').textContent = 
-            `${days}d ${hours}h ${minutes}m ${seconds}s`;
+            `${String(days).padStart(2, '0')}DAYS ${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
     } else {
         clearInterval(countdownInterval);
         document.getElementById('countdown').textContent = "EXPIRED";

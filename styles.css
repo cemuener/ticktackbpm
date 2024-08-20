@@ -1,23 +1,29 @@
 /* styles.css */
-@import url('https://fonts.googleapis.com/css2?family=DSEG7-Classic:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap'); /* VT323 has a closer match */
 
 body {
-    font-family: Arial, sans-serif;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
     background-color: black;
-    color: #FFDD44; /* Similar to the color in your image */
+    color: #ffe5b0;  /* Bright orange-yellow color similar to the show */
+    text-shadow: 
+        0 0 1px #FFAA00,   
+        0 0 1px #FF8800,  
+        0 0 10px #FF5500;
+    font-family: 'VT323', monospace;  /* Update the font to VT323 */
 }
 
 .container {
     text-align: center;
+    text-transform: uppercase;
 }
 
 .countdown-display {
-    font-family: 'DSEG7 Classic', sans-serif;
-    font-size: 4em;
-    color: #FFDD44; /* Matches the font color in the image */
+    font-size: 6em;  /* Large font size for visibility */
+    letter-spacing: 0.05em;
+    background-color: black; /* Ensure background remains black */
+    padding: 10px;
 }
